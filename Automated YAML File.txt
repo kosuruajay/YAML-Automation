@@ -1,0 +1,38 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+parameters:
+#ADO project creation
+- name: adoCreate
+  displayName: Create ADO Project
+  type: boolean
+  default: false
+
+- name: ado_project
+  displayName: ADO Project Name
+  type: string
+  default: ProjectName
+
+- name: ado_org
+  displayName: ADO Org Name Name
+  type: string
+  default: premierinc
+
+
+#GitHub project creation
+- name: githubCreate
+  displayName: Create GitHub Project
+  type: boolean
+  default: false
+
+- name: github_project
+  displayName: GitHub Project Name
+  type: string
+  default: ProjectName
+
+- name: github_org
+  displayName: GitHub Org Name Name
+  type: string
+  default: premierinc
